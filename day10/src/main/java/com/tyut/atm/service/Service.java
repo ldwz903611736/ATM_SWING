@@ -218,13 +218,13 @@ public class Service {
 
     /**
      * 判断用户的唯一性
-     * @param person_id 身份证号
+     * @param personId 身份证号
      * @return
      */
-    public static boolean uniqueUser(String person_id) {
+    public static boolean uniqueUser(String personId) {
         List<User> users = listUser();
         for (User user : users) {
-            if (user.getPerson_id().equals(person_id)) {
+            if (user.getPerson_id().equals(personId)) {
                 return false;
             }
         }

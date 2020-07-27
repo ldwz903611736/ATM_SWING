@@ -83,7 +83,7 @@ public class WithDrawalsPanel extends JPanel implements ActionListener {
                     BigDecimal take = new BigDecimal(input.getText());
                     BigDecimal remain = new BigDecimal(String.valueOf(user.getBalance()));
                     // 判断是否是100的整数倍
-                    if (!(take.remainder(new BigDecimal("100")).toString().equals("0"))) {
+                    if (!("0".equals(take.remainder(new BigDecimal("100")).toString()))) {
                         flag = false;
                         JOptionPane.showMessageDialog(this, "取款必须是100的整数倍！", "通知", JOptionPane.ERROR_MESSAGE);
                     }

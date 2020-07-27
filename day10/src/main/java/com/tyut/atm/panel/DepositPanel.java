@@ -74,7 +74,7 @@ public class DepositPanel extends JPanel implements ActionListener {
             if (flag) {
                 BigDecimal to = new BigDecimal(input.getText());
                 // 判断是否是100的整数倍
-                if (!(to.remainder(new BigDecimal("100")).toString().equals("0"))) {
+                if (!("0".equals(to.remainder(new BigDecimal("100")).toString()))) {
                     flag = false;
                     JOptionPane.showMessageDialog(this, "存款金额必须是100的整数倍！", "通知", JOptionPane.ERROR_MESSAGE);
                 }

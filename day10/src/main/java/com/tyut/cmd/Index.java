@@ -53,7 +53,7 @@ public class Index {
                             System.err.println("请输入有效金额！");
                         } else if ((new BigDecimal(money).compareTo(new BigDecimal(this.user.getBalance().toString()))) >= 0) {
                             System.err.println("超出金额！");
-                        } else if (!(new BigDecimal(money).remainder(new BigDecimal("100"))).toString().equals("0")) {
+                        } else if (!"0".equals((new BigDecimal(money).remainder(new BigDecimal("100"))).toString())) {
                             System.err.println("取款金额必须是100的倍数，请重新输入！");
                         } else {
                             Service.changRemain(user.getPerson_id(), money, false);
@@ -68,7 +68,7 @@ public class Index {
                         String money = scanner.next();
                         if (!(Pattern.matches("^[0-9]*$", money))) {
                             System.err.println("请输入有效金额!");
-                        } else if (!(new BigDecimal(money).remainder(new BigDecimal("100"))).toString().equals("0")) {
+                        } else if (!"0".equals((new BigDecimal(money).remainder(new BigDecimal("100"))).toString())) {
                             System.err.println("存款金额必须是100的倍数！");
                         } else {
                             Service.changRemain(user.getPerson_id(), money, true);
@@ -104,7 +104,7 @@ public class Index {
                     } else {
                         System.out.print("\t确定要退出吗(Y/N)");
                         String s = scanner.next();
-                        if (s.equalsIgnoreCase("Y")) {
+                        if ("Y".equalsIgnoreCase(s)) {
                             sign = false;
                             System.out.println("程序退出!");
                             Service.clearInfo();
