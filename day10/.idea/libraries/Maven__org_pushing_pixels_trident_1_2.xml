@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.pushing-pixels:trident:1.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/pushing-pixels/trident/1.2/trident-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/pushing-pixels/trident/1.2/trident-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/pushing-pixels/trident/1.2/trident-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
