@@ -13,7 +13,6 @@ import java.util.Scanner;
  */
 public class AutoTellerMachineApplication {
     public static void main(String[] args) {
-        System.out.println();
         System.out.println("*******************************************************");
         System.out.println("*********    欢 迎 使 用 ATM 提 款 服 务 系 统    *********");
         System.out.println("*********\t\t请输入你想进行的服务方式\t\t\t  *********");
